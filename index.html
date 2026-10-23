@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e8">
+  <title>Наша история ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#scene-1" aria-label="К началу истории">♡ <span>Наша история</span></a>
+    <nav class="chapter-nav" aria-label="Навигация по главам">
+      <a href="#scene-1" class="active">01</a>
+      <a href="#scene-2">02</a>
+      <a href="#scene-3">03</a>
+      <a href="#scene-4">04</a>
+      <a href="#scene-5">05</a>
+      <a href="#scene-6">06</a>
+    </nav>
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false">♫ <span>Включить музыку</span></button>
+  </header>
+
+  <main id="story">
+    <section class="scene intro" id="scene-1" data-scene="1">
+      <div class="intro-glow"></div>
+      <div class="polaroid polaroid-left tilt-left">
+        <img src="images/photo-01.jpg" alt="Добавь сюда одну из ваших фотографий" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Ваша фотография</div>
+        <span class="handwritten">Моя красотка ♡</span>
+      </div>
+      <div class="polaroid polaroid-right tilt-right">
+        <img src="images/photo-02.jpg" alt="Добавь сюда ещё одну фотографию" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Ещё одно воспоминание</div>
+        <span class="handwritten">И весь мир на мгновение перестаёт существовать</span>
+      </div>
+      <div class="scene-copy intro-copy">
+        <p class="eyebrow">НЕБОЛЬШАЯ ИСТОРИЯ О НАС</p>
+        <h1>Привет моя хорошая!<br></h1>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p class="lead">После той идеи я захотел всё немного приукрасить) Я немного подумал и решил подарить тебе этот прекрасный мини-фильм про нас двоих.</p>
+        <p class="body-copy">Наша история началась совершенно случайно, но иногда случайности приводят нас именно туда, где мы и должны быть.</p>
+        <a class="next-link" href="#scene-2">Начать историю <span>↓</span></a>
+      </div>
+      <div class="scene-counter">01 <i></i> 06</div>
+      <div class="scroll-hint">Прокрути, чтобы продолжить <span>⌄</span></div>
+    </section>
+
+    <section class="scene" id="scene-2" data-scene="2">
+      <div class="polaroid polaroid-left tilt-left small-photo">
+        <img src="images/photo-03.jpg" alt="Фото из начала отношений" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Может быть фото билетов/начала переписьки</div>
+      </div>
+      <div class="polaroid polaroid-right tilt-right">
+        <img src="images/photo-04.jpg" alt="Ещё одно фото из начала отношений" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Первое воспоминание</div>
+        <span class="handwritten"></span>
+      </div>
+      <article class="scene-copy">
+        <p class="eyebrow">ГЛАВА 1</p>
+        <h2>Всё началось<br>случайно</h2>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p>Ты хотела продать мне билет на какую-то тусовку. Кажется, ты даже не планировала идти дальше со мной по жизни – да и я сам тогда не представлял, куда всё приведёт.</p>
+        <p>А потом мы начали часами разговаривать обо всём на свете, и каждый такой разговор делал нас чуточку ближе…
+        </p>
+        <p class="closing-line">И, кажется, именно с этого всё началось…</p>
+      </article>
+      <div class="scene-counter">02 <i></i> 06</div>
+      <a class="scene-next" href="#scene-3" aria-label="Следующая сцена">↓</a>
+    </section>
+
+    <section class="scene scene-warm" id="scene-3" data-scene="3">
+      <div class="polaroid polaroid-left tilt-right">
+        <img src="images/photo-05.jpg" alt="Фото первой встречи" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Фото вашей встречи</div>
+        <span class="handwritten">я очень хотел увидеть тебя</span>
+      </div>
+      <div class="polaroid polaroid-right tilt-left small-photo">
+        <img src="images/photo-06.jpg" alt="Фото из поездки" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Ваша поездка</div>
+      </div>
+      <article class="scene-copy">
+        <p class="eyebrow">ГЛАВА 2</p>
+        <h2>Мне хотелось<br>увидеть тебя</h2>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p>Я спешил в аэропорт и злился на каждую задержку, потому что очень хотел приехать к тебе, увидеть тебя вживую и просто поговорить.</p>
+        <p>А потом оказалось, что человек, с которым можно говорить обо всём, стал человеком, которого я люблю больше всех на свете.</p>
+        <p class="closing-line">И я до сих пор рад, что тогда мы встретились.</p>
+      </article>
+      <div class="scene-counter">03 <i></i> 06</div>
+      <a class="scene-next" href="#scene-4" aria-label="Следующая сцена">↓</a>
+    </section>
+
+    <section class="scene scene-memory" id="scene-4" data-scene="4">
+      <div class="video-card">
+        <video
+                class="memory-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+        >
+          <source src="videos/memory-01.mp4" type="video/mp4">
+        </video>
+        <p class="video-caption">Маленькие моменты, огромное счастье</p>
+      </div>
+      <article class="scene-copy">
+        <p class="eyebrow">ГЛАВА 3</p>
+        <h2>Наши маленькие<br>моменты</h2>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p>Не только большие события делают историю особенной. Иногда это обычный вечер, смешная фраза, дорога куда-то или момент, который никто специально не снимал.</p>
+        <p class="closing-line">Именно из таких мелочей и складывается наше «мы».</p>
+      </article>
+      <div class="scene-counter">04 <i></i> 06</div>
+      <a class="scene-next" href="#scene-5" aria-label="Следующая сцена">↓</a>
+    </section>
+
+    <section class="scene scene-warm" id="scene-5" data-scene="5">
+      <div class="polaroid polaroid-left tilt-left">
+        <img src="images/photo-07.jpg" alt="Фото пары" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Фото, которое дорого вам обоим</div>
+      </div>
+      <div class="polaroid polaroid-right tilt-right">
+        <img src="images/photo-08.jpg" alt="Ещё одно фото пары" onerror="this.closest('.polaroid').classList.add('placeholder'); this.remove()">
+        <div class="photo-placeholder">Ещё один тёплый момент</div>
+        <span class="handwritten">мы справились ♡</span>
+      </div>
+      <article class="scene-copy">
+        <p class="eyebrow">ГЛАВА 4</p>
+        <h2>Мы учились<br>быть вместе</h2>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p>Мы не всегда сразу понимали друг друга. Иногда ошибались, иногда усложняли то, что можно было решить проще.</p>
+        <p>Но я рад, что наша история не оборвалась в самом начале. Мы менялись, учились и продолжали идти вперёд.</p>
+        <p class="closing-line">Ведь всё, через что мы прошли, стало частью нас.</p>
+      </article>
+      <div class="scene-counter">05 <i></i> 06</div>
+      <a class="scene-next" href="#scene-6" aria-label="Следующая сцена">↓</a>
+    </section>
+
+    <section class="scene finale" id="scene-6" data-scene="6">
+      <div class="finale-sparkle">✧</div>
+      <article class="scene-copy finale-copy">
+        <p class="eyebrow">САМОЕ ГЛАВНОЕ</p>
+        <h2>Я хочу, чтобы<br>мы любили друг друга<br>всю жизнь</h2>
+        <div class="heart-divider">──── ♡ ────</div>
+        <p>Я видел такую любовь лишь раз – у своих прабабушки и прадедушки. Несмотря ни на какие трудности, они всегда были друг за друга.</p>
+        <p>Я мечтаю, чтобы однажды и о нас говорили так же. Чтобы у нас было ещё много лет, историй, фотографий и моментов, которые захочется вспоминать.</p>
+        <button class="reveal-button" id="reveal-proposal" type="button">И ещё один вопрос…</button>
+        <div class="proposal-question" id="proposal-question" hidden>
+          <p class="eyebrow">МОЯ ЛЮБИМАЯ ПРИНЦЕССА</p>
+          <h2>Ты выйдешь<br>за меня замуж?</h2>
+          <p class="big-heart">♥</p>
+          <p class="closing-line">Я люблю тебя. Сегодня, завтра и всю жизнь.</p>
+        </div>
+      </article>
+      <div class="scene-counter">06 <i></i> 06</div>
+    </section>
+  </main>
+
+  <audio id="background-music" src="audio/music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
